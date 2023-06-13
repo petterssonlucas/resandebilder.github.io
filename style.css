@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond',Georgia,"Times New Roman",serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px 0px rgb(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+header img {
+    height: 60px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.right-header {
+    line-height: 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.right-header a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.right-header a:hover {
+    text-decoration: underline;
+}
+
+header button {
+    margin-top: 20px;
+    height: 40px;
+    padding: 0 24px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(226, 13, 13);
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: rgb(175, 13, 13);
+}
+
+.cont {
+    position: relative;
+    margin: 0 auto;
+    width: min(100%, 1200px);
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero .dark {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 2.4rem;
+    text-shadow: 0px 0px rgb(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: 500;
+}
+
+.dark a {
+    color: #fff;
+    font-size: 22px;
+    line-height: 2.4rem;
+    text-shadow: 0px 0px rgb(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #000;
+}
+
+section p, section a {
+    font-size: 18px;
+    line-height: 1.6rem;
+    color: #000;
+    font-weight: 500;
+}
+
+section button {
+    margin-top: 20px;
+    height: 40px;
+    padding: 0 24px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(226, 13, 13);
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+section button:hover {
+    background: rgb(175, 13, 13);
+}
+
+.contact-body {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.8);
+    display: none;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.contact-window {
+    background: #fff;
+    border-radius: 12px;
+    width: min(100%, 500px);
+    box-sizing: border-box;
+    padding: 60px 40px 40px;
+    position: relative;
+    box-shadow: 1px 2px 12px rgb(0, 0, 0, 0.6);
+}
+
+.contact-window .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgb(226, 13, 13);
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: rgb(175, 13, 13);
+}
+
+.abort-space {
+    display: flex; 
+    justify-content: right;
+}
+
+.abort-space button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 42px;
+    color: #000;
+    cursor: pointer;
+}
+
+#notification {
+    width: calc(100% - 80px);
+    text-align: center;
+    margin-top: 65px;
+    position: absolute;
+    background: rgb(117, 163, 117);
+    color: #fff;
+    border-radius: 18px;
+    padding: 5px 0;
+}
+  
+
+
+#galleri {
+    background: #1b1b1b;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-body {
+    position: relative;
+    width: min(33%, 380px);
+    aspect-ratio: 1/1;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.image-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-body .cover {
+    position: absolute;
+    background: rgb(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.image-body .cover:hover {
+    background: rgb(0, 0, 0, 0);
+}
+
+footer {
+    background: #1b1b1b;
+    padding: 60px 0;
+}
+
+footer * {
+    color: #fff;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: block;
+    gap: 40px;
+}
+
+.footer-links h3 {
+    margin-bottom: 4px;
+}
+
+.footer-links i {
+    font-size: 38px;
+    margin-right: 5px;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+@media (max-width: 767px) {
+
+    header {
+        height: 60px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    header button {
+        margin-top: 15px;
+        height: 30px;
+        padding: 0 24px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    header a {
+        display: none;
+    }
+
+    .hero p, .hero a {
+        font-size: 16px;
+        line-height: 1.6rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    section button {
+        display: none;
+    }
+
+    section p, section a {
+        font-size: 16px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .image-body {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links i {
+        font-size: 42px;
+        color: #fff;
+        margin-right: 0;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .contact-window .buttons {
+        display: block;
+    }
+}
