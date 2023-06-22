@@ -20,8 +20,8 @@ header {
 }
 
 header img {
-    height: 60px;
-    margin-top: 10px;
+    height: 54px;
+    margin-top: 13px;
 }
 
 h2 {
@@ -51,7 +51,7 @@ header button {
     padding: 0 24px;
     border: none;
     outline: none;
-    border-radius: 16px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
     background: rgb(226, 13, 13);
@@ -138,7 +138,7 @@ section button {
     padding: 0 24px;
     border: none;
     outline: none;
-    border-radius: 16px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
     background: rgb(226, 13, 13);
@@ -188,7 +188,7 @@ section button:hover {
     width: 200px;
     border: none;
     outline: none;
-    border-radius: 16px;
+    border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
     background: rgb(226, 13, 13);
@@ -304,7 +304,7 @@ footer p {
 }
 
 .footer-logo img {
-    height: 60px;
+    height: 54px;
 }
 
 @media (max-width: 767px) {
@@ -315,11 +315,12 @@ footer p {
 
     header img {
         height: 40px;
+        margin-top: 10px;
     }
 
     header button {
-        margin-top: 15px;
-        height: 30px;
+        margin-top: 10px;
+        height: 40px;
         padding: 0 24px;
         font-size: 14px;
         border-radius: 6px;
@@ -383,5 +384,18 @@ footer p {
 
     .contact-window .buttons {
         display: block;
+    }
+
+    .image-body .cover {
+        background: rgb(0, 0, 0, 0.3);
+    }
+
+    .image-body .cover:hover {
+        background: rgb(0, 0, 0, 0.3);
+    }
+
+    .buttons button {
+        height: 40px;
+        border-radius: 6px;
     }
 }
